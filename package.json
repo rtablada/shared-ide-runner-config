@@ -1,0 +1,7 @@
+{
+  "name": "shared-debuggers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ryan Tablada <ryan.tablada@gmail.com>",
+  "license": "MIT"
+}
