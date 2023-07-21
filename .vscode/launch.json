@@ -1,0 +1,75 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch <No Env>",
+      "program": "${workspaceFolder}/index.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
+      "name": "Launch <Hardcoded>",
+      "program": "${workspaceFolder}/index.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "env": {
+        "VAR_1": "ide-1",
+        "VAR_2": "ide-2",
+        "VAR_3": "ide-3",
+        "VAR_4": "ide-4",
+      },
+      "type": "node"
+    },
+    {
+      "name": "Launch <.local.env>",
+      "program": "${workspaceFolder}/index.js",
+      "request": "launch",
+      "envFile": "${workspaceFolder}/.local.env",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node",
+    },
+    {
+      "name": "Launch <.staging.env>",
+      "program": "${workspaceFolder}/index.js",
+      "request": "launch",
+      "envFile": "${workspaceFolder}/.staging.env",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
+      "name": "Launch <.test.env>",
+      "program": "${workspaceFolder}/index.js",
+      "request": "launch",
+      "envFile": "${workspaceFolder}/.test.env",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
+      "name": "Override <.local.env>",
+      "program": "${workspaceFolder}/index.js",
+      "request": "launch",
+      "envFile": "${workspaceFolder}/.local.env",
+      "env": {
+        "VAR_1": "ide-1"
+      },
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+  ]
+}

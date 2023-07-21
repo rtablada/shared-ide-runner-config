@@ -1,3 +1,7 @@
+.local.env
+.staging.env
+.test.env
+
 # Logs
 logs
 *.log
